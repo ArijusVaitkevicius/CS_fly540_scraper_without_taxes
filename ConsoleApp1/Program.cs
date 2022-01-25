@@ -112,7 +112,7 @@ class Fly540Scraper
 
                     int fullPrice = Convert.ToInt32(outPrice) + Convert.ToInt32(inPrice);
 
-                    var newLine = $"{outFromIATA};{outToIATA};{fullOutDepDate};{fullOutArrDate};{inFromIATA};{inToIATA};{fullInDepDate};{fullInArrDate};{fullPrice}";
+                    var newLine = $"{outFromIATA};{outToIATA};{fullOutDepDate};{fullOutArrDate};{inFromIATA};{inToIATA};{fullInDepDate};{fullInArrDate};{fullPrice.ToString("F" + 2)}";
 
                     //Adds line to csv variable.
                     csv.AppendLine(newLine);
